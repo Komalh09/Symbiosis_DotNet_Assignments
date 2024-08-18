@@ -1,0 +1,15 @@
+<p>string-analyzer works!</p>
+<hr>
+<br>
+<div>
+  <label for="inputString">Enter a string:</label>
+  <input id="inputString" [(ngModel)]="inputString" placeholder="Type here..." />
+</div>
+<br>
+<div>
+  <button (click)="analyzeString()">Analyze</button>
+</div>
+
+<div *ngIf="mostRepetitiveChar">
+  <strong>The most repetitive character is</strong>: {{ mostRepetitiveChar }}
+</div>
